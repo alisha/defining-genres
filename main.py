@@ -32,3 +32,16 @@ for artist in top_artists:
   for track in tracks:
     top_tracks.append(track["id"])
 
+# get audio features for each track
+audio_features = sp.audio_features(top_tracks)
+pp.pprint(audio_features)
+
+danceability = []
+energy = []
+speechiness = []
+tempo = []
+for song in audio_features:
+  danceability.append(song["danceability"])
+  energy.append(song["energy"])
+  speechiness.append(song["speechiness"])
+  tempo.append(song["tempo"])
