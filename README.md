@@ -13,3 +13,7 @@ Music genres are difficult to define. This project attempts to identify the prim
 * For a given song, find its ["audio features"](https://developer.spotify.com/web-api/get-audio-features/) from the Spotify API
 * Determine the mean and medians of the audio features for each genre's hit songs
 * Compare those means and medians for various genres
+
+### Future improvements
+
+* Weight artists and songs by popularity (e.g. the genre's most popular artist will "count" more than a less popular artist)

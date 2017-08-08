@@ -14,17 +14,21 @@ pp = PrettyPrinter(indent=2)
 genre = "indie" # for initial testing. TODO: test multiple genres
 
 # get a genre's top artists
-topArtistsParams = {'method': 'tag.gettopartists', 'tag': genre, 'limit': 1, 'api_key': secret.LF_KEY, 'format': 'json'}
-topArtistsRequest = requests.get(LF_BASE, params=topArtistsParams).json()
-topArtists = []
-for artist in topArtistsRequest['topartists']['artist']:
-  topArtists.append(artist['name'])
+top_artists_params = {'method': 'tag.gettopartists', 'tag': genre, 'limit': 1, 'api_key': secret.LF_KEY, 'format': 'json'}
+top_artists_request = requests.get(LF_BASE, params=top_artists_params).json()
+top_artists = []
+for artist in top_artists_request['topartists']['artist']:
+  top_artists.append(artist['name'])
 
 # authenticate spotify
 client_credentials_manager = SpotifyClientCredentials()
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 # for each artist, get top tracks from Spotify
-topTracks = []
-for artist in topArtists:
-  print sp.search(artist, type="artist")
+top_tracks = []
+for artist in top_artists:
+  artist_id = sp.search(artist, type="artist")["artists"]["items"][0]["id"]
+  tracks = sp.artist_top_tracks(artist_id)["tracks"]
+  for track in tracks:
+    top_tracks.append(track["id"])
+
