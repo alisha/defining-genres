@@ -14,12 +14,17 @@ LF_BASE = 'https://ws.audioscrobbler.com/2.0/'
 
 pp = PrettyPrinter(indent=2)
 
-danceability = {}
-energy = {}
-speechiness = {}
-tempo = {}
+genres = ['indie'] #, 'pop', 'rap', 'country'
+features = ['danceability', 'energy', 'speechiness', 'tempo']
 
-genres = ["indie", "pop", "rap", "country"]
+# authenticate spotify
+client_credentials_manager = SpotifyClientCredentials()
+sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+
+f = open('data.csv', 'w')
+f.write('genre, artist name, song name, ')
+f.write(', '.join(features))
+f.write('\n')
 
 for genre in genres:
   # get a genre's top artists
@@ -29,43 +34,32 @@ for genre in genres:
   for artist in top_artists_request['topartists']['artist']:
     top_artists.append(artist['name'])
 
-  # authenticate spotify
-  client_credentials_manager = SpotifyClientCredentials()
-  sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-
   # for each artist, get top tracks from Spotify
-  top_tracks = []
   for artist in top_artists:
     artist_id = sp.search(artist, type="artist")["artists"]["items"][0]["id"]
     tracks = sp.artist_top_tracks(artist_id)["tracks"]
+    
+    # create new CSV entry for each song, put audio features
     for track in tracks:
-      top_tracks.append(track["id"])
+      f.write(genre + ', ' + track['artists'][0]['name'] + ', ' + track['name'] + ', ')
+      audio_features = sp.audio_features([track["id"]])
+      song_features = []
+      for feature in features:
+        song_features.append(audio_features[0][feature])
+      f.write(', '.join(str(val) for val in song_features))
+      f.write('\n')
 
-  # get audio features for each track
-  audio_features = sp.audio_features(top_tracks)
-  genre_danceability = []
-  genre_energy = []
-  genre_speechiness = []
-  genre_tempo = []
-  for song in audio_features:
-    genre_danceability.append(song["danceability"])
-    genre_energy.append(song["energy"])
-    genre_speechiness.append(song["speechiness"])
-    genre_tempo.append(song["tempo"])
+f.close()
 
-  # add genre's audio features to main feature dicts
-  danceability[genre] = pd.Series(genre_danceability)
-  energy[genre] = genre_energy
-  speechiness[genre] = genre_speechiness
-  tempo[genre] = genre_tempo
+# pandas
 
-danceability_obj = pd.DataFrame(danceability)
+'''danceability_obj = pd.DataFrame(danceability)
 plt.figure()
 danceability_obj.plot.hist(alpha=0.5, title="Danceability of hit songs for various genres")
 plt.show(block=True)
 
 # create pandas DataFrames
-'''danceability_obj = pd.DataFrame(danceability)
+danceability_obj = pd.DataFrame(danceability)
 energy_obj = pd.DataFrame({'energy' : pd.Series(energy, index=top_tracks)})
 speechiness_obj = pd.DataFrame({'speechiness'  : pd.Series(speechiness, index=top_tracks)})
 tempo_obj = pd.DataFrame({'tempo' : pd.Series(tempo, index=top_tracks)})
