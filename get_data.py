@@ -11,7 +11,7 @@ LF_BASE = 'https://ws.audioscrobbler.com/2.0/'
 
 pp = PrettyPrinter(indent=2)
 
-genres = ['indie'] #, 'pop', 'rap', 'country'
+genres = ['indie', 'pop', 'rap', 'country']
 features = ['danceability', 'energy', 'speechiness', 'tempo']
 
 # authenticate spotify
@@ -38,7 +38,8 @@ for genre in genres:
     
     # create new CSV entry for each song, put audio features
     for track in tracks:
-      f.write(genre + ',' + track['artists'][0]['name'] + ',' + track['name'] + ',')
+      f.write(','.join((genre, track['artists'][0]['name'], track['name'])).encode('utf-8'))
+      f.write(',')
       audio_features = sp.audio_features([track["id"]])
       song_features = []
       for feature in features:
