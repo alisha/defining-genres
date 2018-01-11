@@ -14,8 +14,15 @@ features = ['danceability', 'energy', 'speechiness', 'tempo']
 for feature in features:
   for genre1 in range(0, len(genres)):
     for genre2 in range(genre1 + 1, len(genres)):
+      genre1_df = music_data.query(('genre == "{}"').format(genres[genre1]))[feature]
+      genre2_df = music_data.query(('genre == "{}"').format(genres[genre2]))[feature]
+      
       print("T test for " + feature + ", comparing " + genres[genre1] + " and " + genres[genre2])
-      (stat, pvalue) = ttest_ind(music_data.query(('genre == "{}"').format(genres[genre1]))[feature], music_data.query(('genre == "{}"').format(genres[genre2]))[feature])
+
+      print("Average " + feature + " for " + genres[genre1] + " is " + str(genre1_df.mean()))
+      print("Average " + feature + " for " + genres[genre2] + " is " + str(genre2_df.mean()))
+
+      (stat, pvalue) = ttest_ind(genre1_df, genre2_df)
       print("P value is " + str(pvalue) + " so we can" + ("" if pvalue < 0.05 else " NOT") + " assume that there is a statistically significant difference in these genres for this feature\n")
 
 # bar charts of each audio feature
