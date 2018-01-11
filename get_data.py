@@ -19,13 +19,13 @@ client_credentials_manager = SpotifyClientCredentials()
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 f = open('data.csv', 'w')
-f.write('genre,artist name,song name,')
-f.write(','.join(features))
+f.write('genre|artist name|song name|')
+f.write('|'.join(features))
 f.write('\n')
 
 for genre in genres:
   # get a genre's top artists
-  top_artists_params = {'method': 'tag.gettopartists', 'tag': genre, 'limit': 1, 'api_key': secret.LF_KEY, 'format': 'json'}
+  top_artists_params = {'method': 'tag.gettopartists', 'tag': genre, 'limit': 10, 'api_key': secret.LF_KEY, 'format': 'json'}
   top_artists_request = requests.get(LF_BASE, params=top_artists_params).json()
   top_artists = []
   for artist in top_artists_request['topartists']['artist']:
@@ -38,13 +38,13 @@ for genre in genres:
     
     # create new CSV entry for each song, put audio features
     for track in tracks:
-      f.write(','.join((genre, track['artists'][0]['name'], track['name'])).encode('utf-8'))
-      f.write(',')
+      f.write('|'.join((genre, track['artists'][0]['name'], track['name'])).encode('utf-8'))
+      f.write('|')
       audio_features = sp.audio_features([track["id"]])
       song_features = []
       for feature in features:
         song_features.append(audio_features[0][feature])
-      f.write(','.join(str(val) for val in song_features))
+      f.write('|'.join(str(val) for val in song_features))
       f.write('\n')
 
 f.close()
