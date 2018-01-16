@@ -1,5 +1,6 @@
 import requests # to access the APIs
 import json
+import unicodecsv as csv
 from pprint import PrettyPrinter
 import spotipy
 import spotipy.util as util
@@ -14,37 +15,37 @@ pp = PrettyPrinter(indent=2)
 genres = ['indie', 'pop', 'rap', 'country']
 features = ['danceability', 'energy', 'speechiness', 'tempo']
 
-# authenticate spotify
-client_credentials_manager = SpotifyClientCredentials()
+# Authenticate spotify
+client_credentials_manager = SpotifyClientCredentials(client_id=secret.SPOTIPY_CLIENT_ID, client_secret=secret.SPOTIPY_CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-f = open('data.csv', 'w')
-f.write('genre|artist name|song name|')
-f.write('|'.join(features))
-f.write('\n')
+f = open('data.csv', 'wb')
+writer = csv.writer(f, delimiter="|", quotechar="", quoting=csv.QUOTE_NONE, encoding='utf-8')
+writer.writerow(['genre', 'artist name', 'song name'] + features)
 
 for genre in genres:
-  # get a genre's top artists
-  top_artists_params = {'method': 'tag.gettopartists', 'tag': genre, 'limit': 10, 'api_key': secret.LF_KEY, 'format': 'json'}
-  top_artists_request = requests.get(LF_BASE, params=top_artists_params).json()
-  top_artists = []
-  for artist in top_artists_request['topartists']['artist']:
-    top_artists.append(artist['name'])
+  # Get a genre's top tracks
+  top_tracks_params = {'method': 'tag.gettoptracks', 'tag': genre, 'limit': 50, 'api_key': secret.LF_KEY, 'format': 'json'}
+  top_tracks_request = requests.get(LF_BASE, params=top_tracks_params).json()
 
-  # for each artist, get top tracks from Spotify
-  for artist in top_artists:
-    artist_id = sp.search(artist, type="artist")["artists"]["items"][0]["id"]
-    tracks = sp.artist_top_tracks(artist_id)["tracks"]
+  # For each track, get music data from spotify
+  for track in top_tracks_request['tracks']['track']:
+    song_name = track['name']
+    artist = track['artist']['name']
     
-    # create new CSV entry for each song, put audio features
-    for track in tracks:
-      f.write('|'.join((genre, track['artists'][0]['name'], track['name'])).encode('utf-8'))
-      f.write('|')
-      audio_features = sp.audio_features([track["id"]])
+    # Find song on Spotify
+    q = 'artist:' + artist + " track:" + song_name
+    sp_search = sp.search(q, type="track", limit=1)
+    if len(sp_search['tracks']['items']) >= 1:
+      song_id = sp_search['tracks']['items'][0]['id']
+      
+      # Get audio features
+      audio_features = sp.audio_features(tracks=[song_id])
       song_features = []
       for feature in features:
         song_features.append(audio_features[0][feature])
-      f.write('|'.join(str(val) for val in song_features))
-      f.write('\n')
+
+      # Write to CSV file
+      writer.writerow([genre, artist, song_name] + song_features)
 
 f.close()
