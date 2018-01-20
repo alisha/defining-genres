@@ -1,391 +1,160 @@
 genre|artist name|song name|danceability|energy|speechiness|tempo
 indie|The Killers|Mr. Brightside|0.33|0.936|0.0917|148.112
+indie|Oasis|Wonderwall|0.372|0.865|0.0381|174.53
+indie|Franz Ferdinand|Take Me Out|0.278|0.676|0.0371|104.545
 indie|The Killers|Somebody Told Me|0.5|0.975|0.0824|138.005
-indie|The Killers|The Man|0.612|0.941|0.11|106.017
+indie|Coldplay|Clocks|0.577|0.749|0.0279|130.969
+indie|Coldplay|Viva la Vida|0.485|0.619|0.0289|138.017
+indie|Radiohead|Karma Police|0.36|0.505|0.026|74.807
+indie|Radiohead|Creep|0.515|0.43|0.0369|91.841
+indie|Coldplay|The Scientist|0.56|0.442|0.0243|146.448
+indie|MGMT|Kids|0.451|0.931|0.0719|122.961
+indie|Coldplay|Yellow|0.429|0.661|0.0281|173.365
+indie|Coldplay|Fix You|0.209|0.418|0.0338|138.265
+indie|Blur|Song 2|0.674|0.789|0.0676|129.804
+indie|Kings of Leon|Sex on Fire|0.542|0.905|0.054|153.398
+indie|The White Stripes|Seven Nation Army|0.737|0.463|0.0792|123.881
+indie|Gorillaz|Feel Good Inc.|0.818|0.705|0.177|138.559
+indie|MGMT|Time to Pretend|0.438|0.94|0.0452|100.99
+indie|MGMT|Electric Feel|0.763|0.807|0.035|103.038
+indie|Snow Patrol|Chasing Cars|0.557|0.609|0.0259|104.01
 indie|The Killers|When You Were Young|0.463|0.983|0.138|130.394
-indie|The Killers|Run For Cover|0.462|0.957|0.131|165.112
+indie|Muse|Supermassive Black Hole|0.668|0.921|0.0439|120.0
+indie|Muse|Starlight|0.55|0.874|0.0321|121.61
+indie|Kings of Leon|Use Somebody|0.276|0.715|0.0432|137.028
+indie|Radiohead|Paranoid Android|0.252|0.849|0.0581|163.704
+indie|Radiohead|No Surprises|0.255|0.393|0.0278|76.426
+indie|Muse|Time Is Running Out|0.585|0.842|0.0556|118.211
 indie|The Killers|All These Things That I've Done|0.558|0.74|0.0448|118.293
-indie|The Killers|Human|0.557|0.824|0.0776|135.446
-indie|The Killers|Read My Mind|0.54|0.902|0.0408|132.276
+indie|Arctic Monkeys|I Bet You Look Good on the Dancefloor|0.535|0.948|0.0356|103.183
+indie|Gorillaz|Clint Eastwood|0.663|0.694|0.172|167.964
+indie|The Strokes|Reptilia|0.486|0.666|0.033|157.992
 indie|The Killers|Smile Like You Mean It|0.378|0.979|0.133|125.1
-indie|The Killers|Shot At The Night|0.516|0.806|0.0541|185.96
-indie|Florence + The Machine|You've Got The Love|0.574|0.696|0.0315|109.878
-indie|Florence + The Machine|Dog Days Are Over|0.504|0.812|0.0911|150.11
-indie|Florence + The Machine|Shake It Out|0.512|0.804|0.0408|107.495
-indie|Florence + The Machine|Ship To Wreck|0.566|0.923|0.0321|142.014
-indie|Florence + The Machine|Stand By Me|0.33|0.356|0.0352|93.778
-indie|Florence + The Machine|What Kind Of Man|0.314|0.649|0.045|113.096
-indie|Florence + The Machine|Never Let Me Go|0.456|0.732|0.0457|145.109
-indie|Florence + The Machine|Delilah|0.433|0.871|0.0613|169.897
-indie|Florence + The Machine|Wish That You Were Here - From “Miss Peregrine’s Home for Peculiar Children” Original Motion Picture|0.363|0.591|0.0329|93.946
-indie|Florence + The Machine|Cosmic Love|0.516|0.804|0.0375|140.045
-indie|Arcade Fire|Everything Now|0.548|0.865|0.0302|116.046
-indie|Arcade Fire|Creature Comfort|0.423|0.949|0.0972|189.976
-indie|Arcade Fire|Chemistry|0.508|0.623|0.0564|173.778
-indie|Arcade Fire|Signs of Life|0.65|0.858|0.0458|113.123
-indie|Arcade Fire|Put Your Money On Me|0.604|0.768|0.0308|123.067
-indie|Arcade Fire|Peter Pan|0.693|0.814|0.0392|149.69
-indie|Arcade Fire|Good God Damn|0.799|0.496|0.0391|99.023
-indie|Arcade Fire|Electric Blue|0.663|0.774|0.0863|102.982
-indie|Arcade Fire|Everything_Now (continued)|0.331|0.493|0.0394|74.341
-indie|Arcade Fire|Wake Up|0.252|0.8|0.0368|139.361
-indie|The xx|On Hold|0.723|0.669|0.0348|125.051
-indie|The xx|Intro|0.617|0.778|0.027|100.363
-indie|The xx|I Dare You|0.752|0.543|0.0398|126.001
-indie|The xx|Angels|0.424|0.157|0.0428|91.537
-indie|The xx|Say Something Loving|0.627|0.721|0.0304|130.08
-indie|The xx|Crystalised|0.763|0.484|0.0311|122.913
-indie|The xx|Dangerous|0.774|0.709|0.0465|119.982
-indie|The xx|Islands|0.871|0.472|0.0756|124.04
-indie|The xx|Lips|0.523|0.591|0.0543|173.94
-indie|The xx|Seasons Run|0.57|0.668|0.0293|107.012
-indie|The Smiths|There Is A Light That Never Goes Out - 2011 Remastered Version|0.523|0.769|0.0269|136.162
-indie|The Smiths|This Charming Man - 2011 Remastered Version|0.611|0.846|0.0436|103.912
-indie|The Smiths|How Soon Is Now? - 2011 Remastered Version|0.398|0.93|0.0615|190.818
-indie|The Smiths|Bigmouth Strikes Again - 2011 Remastered Version|0.401|0.901|0.041|134.799
-indie|The Smiths|Please, Please, Please Let Me Get What I Want - 2011 Remastered Version|0.241|0.468|0.0272|91.581
-indie|The Smiths|Asleep - 2011 Remastered Version|0.512|0.255|0.0291|115.144
-indie|The Smiths|I Know It's Over - 2011 Remastered Version|0.407|0.424|0.0318|113.311
-indie|The Smiths|Ask - 2011 Remastered Version|0.453|0.986|0.119|166.594
-indie|The Smiths|The Boy With The Thorn In His Side - 2011 Remastered Version|0.514|0.87|0.0419|118.962
-indie|The Smiths|Heaven Knows I'm Miserable Now - 2011 Remastered Version|0.609|0.759|0.0276|114.045
+indie|Foster the People|Pumped Up Kicks|0.733|0.71|0.0292|127.975
 indie|Death Cab for Cutie|I Will Follow You Into The Dark|0.517|0.206|0.0421|80.401
-indie|Death Cab for Cutie|Soul Meets Body|0.621|0.853|0.0253|128.142
-indie|Death Cab for Cutie|Black Sun|0.608|0.642|0.0251|87.703
-indie|Death Cab for Cutie|Transatlanticism|0.439|0.469|0.0311|127.44
-indie|Death Cab for Cutie|The Ghosts Of Beverly Drive|0.557|0.859|0.0582|154.718
-indie|Death Cab for Cutie|I Will Possess Your Heart|0.605|0.619|0.0261|133.074
-indie|Death Cab for Cutie|Good Help (Is So Hard To Find)|0.705|0.856|0.0423|117.005
-indie|Death Cab for Cutie|Crooked Teeth|0.579|0.662|0.0245|102.951
-indie|Death Cab for Cutie|A Lack Of Color|0.642|0.339|0.0291|135.812
-indie|Death Cab for Cutie|Title And Registration|0.752|0.566|0.0324|115.794
+indie|Muse|Hysteria|0.412|0.92|0.0575|93.162
+indie|R.E.M.|Losing My Religion|0.671|0.849|0.0284|125.613
+indie|Coldplay|Don't Panic|0.602|0.612|0.0335|122.062
+indie|The Postal Service|Such Great Heights|0.653|0.818|0.047|174.984
+indie|The Fray|How to Save a Life|0.64|0.743|0.0379|122.035
+indie|Pixies|Where Is My Mind?|0.523|0.442|0.0347|81.083
+indie|Coldplay|In My Place|0.425|0.587|0.0278|144.642
+indie|The Verve|Bitter Sweet Symphony|0.356|0.915|0.0458|171.166
+indie|Coldplay|Trouble|0.561|0.547|0.0321|139.755
+indie|M.I.A.|Paper Planes|0.457|0.854|0.265|172.231
 indie|Modest Mouse|Float On|0.649|0.888|0.0293|100.975
-indie|Modest Mouse|Dashboard|0.639|0.903|0.0371|135.938
-indie|Modest Mouse|The World At Large|0.523|0.477|0.0254|76.973
-indie|Modest Mouse|Lampshades on Fire|0.659|0.906|0.0428|94.997
-indie|Modest Mouse|Missed the Boat|0.71|0.698|0.0332|104.007
-indie|Modest Mouse|Ocean Breathes Salty|0.646|0.964|0.0369|95.479
-indie|Modest Mouse|Dramamine|0.376|0.736|0.0412|185.12
-indie|Modest Mouse|The Ground Walks, with Time in a Box|0.65|0.957|0.0439|128.009
-indie|Modest Mouse|Bukowski|0.622|0.413|0.0457|130.166
-indie|Modest Mouse|Gravity Rides Everything|0.393|0.417|0.0357|102.386
-indie|Sufjan Stevens|The Only Thing|0.519|0.145|0.0392|158.975
-indie|Sufjan Stevens|Should Have Known Better|0.571|0.172|0.0318|90.972
-indie|Sufjan Stevens|Death with Dignity|0.51|0.16|0.0395|170.063
-indie|Sufjan Stevens|To Be Alone With You|0.519|0.163|0.0489|142.116
-indie|Sufjan Stevens|Casimir Pulaski Day|0.686|0.172|0.0409|133.899
-indie|Sufjan Stevens|Chicago|0.579|0.463|0.0303|124.977
-indie|Sufjan Stevens|Fourth of July|0.441|0.104|0.0459|120.266
-indie|Sufjan Stevens|All the Trees of the Field Will Clap Their Hands|0.632|0.225|0.0296|144.641
-indie|Sufjan Stevens|The Dress Looks Nice on You|0.696|0.269|0.0329|127.798
-indie|Sufjan Stevens|No Shade in the Shadow of The Cross|0.405|0.121|0.0329|82.721
-indie|Interpol|Evil|0.497|0.738|0.0396|129.078
-indie|Interpol|Rest My Chemistry|0.506|0.899|0.0364|150.27
-indie|Interpol|Obstacle 1|0.371|0.941|0.0602|120.499
-indie|Interpol|All The Rage Back Home|0.288|0.907|0.0576|84.483
-indie|Interpol|The Heinrich Maneuver|0.535|0.992|0.0769|137.082
-indie|Interpol|No I In Threesome|0.5|0.873|0.0659|120.082
-indie|Interpol|Slow Hands|0.243|0.969|0.0509|141.934
-indie|Interpol|Pioneer to The Falls|0.477|0.728|0.0394|106.765
-indie|Interpol|C’mere|0.403|0.936|0.0409|125.357
-indie|Interpol|My Desire|0.34|0.787|0.039|105.963
-indie|The Kooks|Naive|0.547|0.816|0.0624|102.765
-indie|The Kooks|She Moves In Her Own Way|0.431|0.81|0.066|76.412
-indie|The Kooks|Junk of the Heart (Happy)|0.604|0.894|0.037|145.014
-indie|The Kooks|Seaside - Live @ Abbey Road;Acoustic|0.573|0.283|0.213|124.839
-indie|The Kooks|Bad Habit|0.731|0.884|0.038|123.069
-indie|The Kooks|Ooh La|0.543|0.873|0.0803|150.891
-indie|The Kooks|Always Where I Need to Be|0.331|0.961|0.0663|168.355
-indie|The Kooks|Be Who You Are|0.44|0.928|0.0897|147.89
-indie|The Kooks|Naive - Acoustic|0.612|0.491|0.0411|88.307
-indie|The Kooks|Sweet Emotion|0.762|0.826|0.0691|98.036
-pop|Lady Gaga|The Cure|0.695|0.497|0.0362|99.972
-pop|Lady Gaga|Million Reasons|0.665|0.424|0.0444|129.911
-pop|Lady Gaga|Poker Face|0.846|0.815|0.0761|118.999
-pop|Lady Gaga|Perfect Illusion|0.625|0.855|0.0389|124.977
-pop|Lady Gaga|Telephone|0.827|0.821|0.0419|122.017
-pop|Lady Gaga|Bad Romance|0.697|0.921|0.0391|118.99
+indie|Vampire Weekend|A-Punk|0.548|0.816|0.0499|174.993
+indie|Florence + the Machine|Dog Days Are Over|0.504|0.812|0.0911|150.11
+indie|Joy Division|Love Will Tear Us Apart|0.525|0.902|0.0368|146.83
+indie|The Strokes|Someday|0.538|0.52|0.0299|106.031
+indie|Coldplay|Speed of Sound|0.523|0.898|0.0567|123.085
+indie|The Kooks|Naïve|0.547|0.816|0.0624|102.765
+pop|Gorillaz|DARE|0.76|0.891|0.0372|120.265
+pop|Amy Winehouse|You Know I'm No Good|0.695|0.809|0.0327|103.447
+pop|Michael Jackson|Thriller|0.777|0.817|0.0464|118.407
+pop|Gotye|Somebody That I Used To Know|0.857|0.517|0.0384|129.063
+pop|Coldplay|Violet Hill|0.345|0.581|0.0369|76.022
+pop|U2|With or Without You|0.543|0.432|0.0288|110.196
+pop|The Cure|Friday I'm in Love|0.526|0.762|0.0342|136.203
 pop|Lady Gaga|Just Dance|0.822|0.753|0.0332|118.982
-pop|Lady Gaga|Applause|0.674|0.788|0.0537|139.908
-pop|Lady Gaga|John Wayne|0.603|0.662|0.0313|96.956
-pop|Lady Gaga|Born This Way|0.59|0.817|0.157|123.895
-pop|Rihanna|Love On The Brain|0.506|0.641|0.0456|171.957
-pop|Rihanna|Work|0.667|0.538|0.0953|91.296
-pop|Rihanna|Needed Me|0.688|0.325|0.251|110.888
-pop|Rihanna|Stay - Album Version (Edited)|0.635|0.317|0.0274|111.924
-pop|Rihanna|Bitch Better Have My Money|0.778|0.741|0.0484|102.95
-pop|Rihanna|FourFiveSeconds|0.576|0.267|0.044|205.888
-pop|Rihanna|Umbrella|0.579|0.821|0.152|174.063
-pop|Rihanna|Take A Bow|0.705|0.469|0.0771|82.009
-pop|Rihanna|We Found Love|0.737|0.758|0.057|128.007
-pop|Rihanna|Diamonds|0.561|0.707|0.0465|91.943
-pop|Britney Spears|Toxic|0.774|0.838|0.114|143.04
-pop|Britney Spears|...Baby One More Time|0.759|0.699|0.0307|92.96
-pop|Britney Spears|Oops!...I Did It Again|0.751|0.834|0.0437|95.053
-pop|Britney Spears|Womanizer|0.724|0.695|0.0622|139.0
-pop|Britney Spears|Slumber Party feat. Tinashe|0.752|0.784|0.0754|135.039
-pop|Britney Spears|Work B**ch|0.629|0.824|0.159|128.01
-pop|Britney Spears|Circus|0.791|0.733|0.052|114.98
-pop|Britney Spears|Make Me... (feat. G-Eazy)|0.701|0.7|0.0925|122.984
-pop|Britney Spears|Gimme More|0.788|0.844|0.0334|113.324
-pop|Britney Spears|Till the World Ends|0.693|0.705|0.0665|131.951
-pop|Madonna|Material Girl|0.742|0.883|0.0329|136.506
-pop|Madonna|4 Minutes (feat. Justin Timberlake & Timbaland)|0.753|0.931|0.0652|113.029
-pop|Madonna|Like A Prayer|0.624|0.842|0.0376|111.037
-pop|Madonna|Vogue|0.748|0.84|0.0421|115.997
-pop|Madonna|Like A Virgin|0.773|0.656|0.0381|119.754
-pop|Madonna|Hung Up|0.649|0.647|0.0452|125.02
-pop|Madonna|La Isla Bonita|0.725|0.612|0.0372|99.978
-pop|Madonna|Into The Groove|0.729|0.856|0.035|116.467
-pop|Madonna|Holiday|0.854|0.796|0.0399|115.625
-pop|Madonna|Like A Prayer|0.66|0.629|0.0387|111.926
-pop|Katy Perry|Swish Swish|0.836|0.705|0.0537|119.949
-pop|Katy Perry|Bon Appétit|0.803|0.791|0.0633|106.044
-pop|Katy Perry|Chained To The Rhythm|0.52|0.798|0.0944|95.252
-pop|Katy Perry|Firework|0.638|0.832|0.049|124.071
-pop|Katy Perry|Dark Horse|0.646|0.587|0.0528|131.932
-pop|Katy Perry|Last Friday Night (T.G.I.F.)|0.651|0.812|0.0409|126.023
-pop|Katy Perry|California Gurls - feat. Snoop Dogg|0.788|0.753|0.0536|125.005
-pop|Katy Perry|The One That Got Away - Acoustic|0.714|0.434|0.0396|123.942
-pop|Katy Perry|Roar|0.671|0.766|0.0323|89.968
-pop|Katy Perry|Teenage Dream|0.72|0.798|0.0361|120.011
-pop|A Great Big World|Say Something|0.407|0.147|0.0355|141.284
-pop|Christina Aguilera|Beautiful|0.457|0.573|0.0275|76.193
-pop|Ricky Martin|El Ultimo Adiós - Varios Artistas Version|0.276|0.572|0.0377|77.986
-pop|Christina Aguilera|Dirrty|0.64|0.889|0.322|99.931
-pop|Christina Aguilera|Genie in a Bottle|0.633|0.792|0.149|175.795
-pop|Christina Aguilera|Lady Marmalade - From "Moulin Rouge" Soundtrack|0.751|0.766|0.0515|109.897
-pop|Christina Aguilera|Fighter|0.435|0.92|0.201|188.899
-pop|Christina Aguilera|What a Girl Wants|0.755|0.827|0.114|142.122
-pop|Christina Aguilera|Ain't No Other Man|0.862|0.742|0.222|127.91
-pop|Christina Aguilera|Hurt|0.327|0.295|0.0313|148.574
-pop|Michael Jackson|Billie Jean|0.92|0.654|0.0401|117.046
-pop|Michael Jackson|Beat It - Single Version|0.779|0.867|0.0457|138.858
-pop|Michael Jackson|Love Never Felt so Good|0.775|0.719|0.0435|117.513
-pop|Michael Jackson|Don't Stop 'Til You Get Enough - Single Version|0.878|0.821|0.089|118.881
-pop|Michael Jackson|P.Y.T. (Pretty Young Thing)|0.888|0.815|0.0404|127.273
-pop|Michael Jackson|Black or White - Single Version|0.758|0.927|0.0509|115.076
-pop|Michael Jackson|Remember the Time|0.831|0.921|0.0581|108.002
-pop|Michael Jackson|Rock with You - Single Version|0.808|0.535|0.0353|114.031
-pop|Michael Jackson|Smooth Criminal - 2012 Remaster|0.853|0.981|0.0751|118.193
-pop|Michael Jackson|The Way You Make Me Feel - 2012 Remaster|0.877|0.854|0.147|114.472
-pop|Avril Lavigne|Complicated|0.585|0.776|0.0459|77.987
-pop|Avril Lavigne|Sk8er Boi|0.487|0.9|0.0482|149.937
-pop|Avril Lavigne|Here's to Never Growing Up|0.487|0.876|0.0946|164.997
-pop|Avril Lavigne|My Happy Ending|0.414|0.936|0.0758|170.229
-pop|Avril Lavigne|Girlfriend|0.56|0.959|0.102|163.983
-pop|Avril Lavigne|I'm with You|0.457|0.406|0.0291|151.95
-pop|Avril Lavigne|What the Hell|0.571|0.932|0.0576|150.014
-pop|Avril Lavigne|When You're Gone|0.458|0.719|0.0323|142.032
-pop|Avril Lavigne|Keep Holding On|0.289|0.787|0.0341|161.032
-pop|Avril Lavigne|Let Me Go|0.387|0.668|0.0373|164.089
-pop|Kesha|Praying|0.576|0.39|0.0297|73.433
-pop|Kesha|Woman|0.743|0.765|0.0389|114.991
-pop|Kesha|Learn To Let Go|0.515|0.847|0.039|168.104
-pop|Kesha|Die Young|0.711|0.7|0.046|128.001
-pop|Kesha|Hymn|0.488|0.538|0.076|67.037
-pop|Kesha|TiK ToK|0.755|0.832|0.116|120.032
-pop|Kesha|We R Who We R|0.734|0.821|0.0406|119.993
-pop|Kesha|Your Love Is My Drug|0.829|0.607|0.0897|120.044
-pop|Kesha|Blow|0.752|0.73|0.0412|120.032
-pop|Kesha|Let 'Em Talk|0.479|0.929|0.141|179.912
-pop|One Direction|Story of My Life|0.6|0.663|0.0477|121.07
-pop|One Direction|History|0.655|0.699|0.0493|86.704
-pop|One Direction|Drag Me Down|0.73|0.703|0.0369|138.113
-pop|One Direction|Night Changes|0.672|0.52|0.0353|120.001
-pop|One Direction|Little Things|0.707|0.222|0.0329|110.095
-pop|One Direction|Perfect|0.647|0.823|0.0762|99.933
-pop|One Direction|You & I|0.574|0.329|0.0274|130.993
-pop|One Direction|Steal My Girl|0.536|0.768|0.0347|77.217
-pop|One Direction|They Don't Know About Us|0.512|0.754|0.055|147.89
-pop|One Direction|Best Song Ever|0.652|0.877|0.0465|118.491
-rap|Eminem|Lose Yourself - Soundtrack Version|0.698|0.732|0.266|171.431
-rap|Eminem|'Till I Collapse|0.572|0.853|0.217|171.297
-rap|Eminem|Rap God|0.708|0.843|0.305|148.164
-rap|Eminem|Love The Way You Lie|0.647|0.924|0.33|173.962
-rap|Eminem|Without Me|0.929|0.65|0.0858|112.249
-rap|Eminem|Not Afraid|0.851|0.95|0.269|114.661
-rap|Eminem|The Monster|0.786|0.857|0.0734|110.038
-rap|Eminem|The Real Slim Shady|0.95|0.665|0.061|104.504
-rap|Eminem|When I'm Gone|0.535|0.73|0.355|74.89
-rap|Eminem|Mockingbird|0.592|0.678|0.248|83.976
-rap|Bebe Rexha|The Way I Are (Dance With Somebody) [feat. Lil Wayne]|0.466|0.659|0.115|186.169
-rap|Lil Wayne|Sucker For Pain (with Wiz Khalifa, Imagine Dragons, Logic & Ty Dolla $ign feat. X Ambassadors)|0.502|0.786|0.317|169.021
-rap|Ty Dolla $ign|Love U Better (feat. Lil Wayne & The-Dream)|0.482|0.477|0.0503|117.85
-rap|Wale|Running Back (feat. Lil Wayne)|0.587|0.671|0.144|127.133
-rap|Nicki Minaj|No Frauds|0.873|0.561|0.272|139.064
-rap|Lil Wayne|6 Foot 7 Foot|0.377|0.738|0.311|80.846
-rap|Lil Wayne|A Milli|0.679|0.684|0.278|151.748
-rap|Lil Wayne|Lollipop|0.828|0.433|0.199|148.073
-rap|Lil Wayne|Love Me|0.674|0.605|0.0335|124.92
-rap|Drake|Forever|0.385|0.908|0.389|79.275
-rap|2Pac|Ambitionz Az A Ridah|0.801|0.91|0.225|87.276
-rap|2Pac|All Eyez On Me|0.872|0.723|0.247|93.279
-rap|2Pac|Only God Can Judge Me|0.802|0.787|0.205|90.188
-rap|2Pac|Ghetto Gospel|0.795|0.615|0.0471|80.535
-rap|2Pac|All About U|0.856|0.793|0.134|103.208
-rap|2Pac|Changes|0.858|0.675|0.0926|111.104
-rap|2Pac|California Love - Original Version|0.769|0.852|0.0438|91.532
-rap|2Pac|Hit 'Em Up - Album Version (Edited)|0.905|0.815|0.224|95.219
-rap|2Pac|2 Of Amerikaz Most Wanted|0.863|0.881|0.126|99.255
-rap|2Pac|Can't C Me|0.795|0.852|0.178|95.442
+pop|The Beatles|Come Together|0.533|0.376|0.0393|165.007
+pop|The Killers|Read My Mind|0.54|0.902|0.0408|132.276
+rap|Kanye West|Stronger|0.625|0.726|0.155|103.98
+rap|Gorillaz|Clint Eastwood|0.663|0.694|0.172|167.964
+rap|Lil' Wayne|Lollipop|0.828|0.433|0.199|148.073
+rap|Drake|Best I Ever Had|0.427|0.861|0.376|161.776
+rap|Kanye West|Heartless|0.789|0.65|0.121|87.983
 rap|50 Cent|In Da Club|0.865|0.73|0.373|90.096
-rap|50 Cent|Candy Shop|0.603|0.594|0.46|129.774
-rap|50 Cent|P.I.M.P.|0.673|0.785|0.351|84.607
-rap|50 Cent|21 Questions|0.547|0.807|0.36|79.823
-rap|Eminem|You Don't Know|0.773|0.867|0.151|85.487
-rap|50 Cent|I'm The Man|0.786|0.44|0.157|98.014
-rap|50 Cent|Patiently Waiting|0.699|0.688|0.291|79.02
-rap|50 Cent|Just A Lil Bit|0.696|0.708|0.337|96.87
-rap|50 Cent|Many Men (Wish Death)|0.574|0.841|0.43|108.095
-rap|50 Cent|Ayo Technology|0.442|0.774|0.198|139.775
-rap|The Game|The Game & Skrillex: El Chapo|0.754|0.909|0.23|126.994
-rap|The Game|All Eyez (feat. Jeremih) [Bonus Track]|0.419|0.655|0.247|76.835
-rap|The Game|100 (feat. Drake)|0.801|0.521|0.28|108.025
-rap|The Game|Hate It Or Love It|0.807|0.785|0.204|99.975
-rap|The Game|How We Do|0.578|0.666|0.435|195.13
-rap|The Game|Ali Bomaye|0.378|0.691|0.461|75.162
-rap|Warren G|Party We Will Throw Now!|0.934|0.562|0.24|96.792
-rap|The Game|My Life|0.665|0.761|0.363|148.109
-rap|The Game|Martians Vs Goblins|0.494|0.811|0.276|83.189
-rap|The Game|Red Nation|0.39|0.886|0.351|175.193
+rap|Eminem|Lose Yourself|0.698|0.732|0.266|171.431
+rap|T.I.|Whatever You Like|0.68|0.687|0.0709|150.053
+rap|OutKast|Ms. Jackson|0.843|0.805|0.269|94.946
+rap|Jay-Z|99 Problems|0.547|0.951|0.151|95.031
+rap|OutKast|Hey Ya!|0.728|0.974|0.0665|79.526
+rap|Dr. Dre|Still D.R.E.|0.821|0.774|0.235|93.425
 rap|Ice Cube|It Was A Good Day|0.796|0.748|0.126|82.384
-rap|Ice Cube|Check Yo Self - Remix;|0.934|0.735|0.251|101.368
-rap|Ice Cube|No Vaseline|0.558|0.959|0.386|104.733
-rap|Ice Cube|You Can Do It - Feat. Mack 10 And Ms Toi|0.946|0.857|0.159|99.88
-rap|Ice Cube|Good Cop Bad Cop|0.713|0.935|0.265|91.98
-rap|Ice Cube|Go To Church - feat. Snoop Dogg & Lil Jon|0.726|0.756|0.19|83.979
-rap|Ice Cube|Why We Thugs|0.683|0.59|0.458|100.892
-rap|Ice Cube|You Know How We Do It|0.761|0.516|0.0379|92.871
-rap|Ice Cube|Hello - Feat. Dr. Dre And MC Ren|0.902|0.612|0.283|91.386
-rap|Ice Cube|Gangsta Rap Made Me Do It|0.81|0.745|0.0975|87.019
-rap|Ludacris|Vitamin D|0.772|0.667|0.129|121.547
-rap|Ludacris|My Chick Bad|0.66|0.72|0.381|84.707
-rap|Ludacris|How Low|0.56|0.494|0.111|144.004
-rap|Ludacris|What's Your Fantasy (Featuring Shawna)|0.914|0.813|0.163|140.089
-rap|Ludacris|Money Maker|0.571|0.613|0.252|83.317
-rap|Ludacris|Good Lovin|0.697|0.769|0.218|83.898
-rap|Ludacris|Rollout (My Business)|0.919|0.677|0.254|131.05
-rap|Ludacris|Pimpin' All Over The World|0.69|0.877|0.264|92.165
-rap|Ludacris|Blueberry Yum Yum|0.975|0.635|0.0995|126.721
-rap|Ludacris|Get Back|0.582|0.651|0.257|171.463
-rap|Tech N9ne|Hood Go Crazy|0.912|0.644|0.287|96.0
-rap|Tech N9ne|Fragile|0.715|0.468|0.147|194.902
-rap|Tech N9ne|Erbody But Me|0.823|0.705|0.282|186.12
-rap|Tech N9ne|Caribou Lou|0.784|0.815|0.298|178.119
-rap|Tech N9ne|Worldwide Choppers|0.746|0.853|0.13|130.028
-rap|Tech N9ne|Am I A Psycho|0.703|0.776|0.304|82.466
-rap|Tech N9ne|Sriracha|0.663|0.774|0.318|90.059
-rap|Tech N9ne|PTSD (Warrior Built)|0.62|0.815|0.328|168.097
-rap|Tech N9ne|Speedom (Wwc2)|0.709|0.934|0.133|130.083
-rap|Tech N9ne|The Beast|0.703|0.909|0.46|204.208
-rap|Jeezy|Put On|0.649|0.785|0.0369|137.618
-rap|Jeezy|Soul Survivor|0.671|0.499|0.0442|84.045
-rap|Jeezy|All There|0.684|0.76|0.0358|72.475
-rap|Jeezy|Way Too Gone|0.747|0.612|0.199|141.971
-rap|Jeezy|R.I.P.|0.825|0.489|0.263|96.99
-rap|Jeezy|Lose My Mind|0.663|0.726|0.119|155.58
-rap|Jeezy|Seen It All|0.711|0.833|0.154|106.094
-rap|Jeezy|Bout That|0.75|0.601|0.325|77.456
-rap|Jeezy|Going Crazy|0.717|0.649|0.106|140.041
-rap|Jeezy|Let Em Know|0.703|0.767|0.151|99.022
-country|ZAYN|I Don’t Wanna Live Forever (Fifty Shades Darker)|0.737|0.452|0.0534|117.962
-country|Taylor Swift|Shake It Off|0.653|0.799|0.163|160.017
-country|Taylor Swift|Blank Space|0.751|0.684|0.0679|95.979
-country|Taylor Swift|I Knew You Were Trouble.|0.596|0.473|0.039|154.228
-country|Taylor Swift|Bad Blood|0.65|0.793|0.185|170.101
-country|Taylor Swift|Wildest Dreams|0.556|0.688|0.0856|140.011
-country|Taylor Swift|We Are Never Ever Getting Back Together|0.622|0.682|0.113|86.035
-country|Taylor Swift|Style|0.594|0.8|0.0377|95.036
-country|Taylor Swift|Everything Has Changed|0.629|0.465|0.0289|80.042
-country|Taylor Swift|22|0.663|0.727|0.0371|103.986
+rap|The Notorious B.I.G.|Juicy|0.889|0.816|0.247|96.056
+rap|Eminem|Without Me|0.929|0.65|0.0858|112.249
+rap|Dr. Dre|The Next Episode|0.916|0.906|0.195|95.3
+rap|Kanye West|Love Lockdown|0.756|0.529|0.0329|119.573
+rap|Kanye West|Can't Tell Me Nothing|0.594|0.614|0.0536|79.968
+rap|Black Eyed Peas|Boom Boom Pow|0.869|0.851|0.0827|130.09
+rap|Eminem|The Real Slim Shady|0.95|0.665|0.061|104.504
+rap|Lil' Wayne|Drop The World|0.505|0.9|0.392|145.042
+rap|The Game|Hate it or love it|0.807|0.785|0.204|99.975
+rap|Beastie Boys|Sabotage|0.324|0.938|0.102|168.131
+rap|Kanye West|All of the Lights|0.558|0.794|0.0533|142.156
+rap|Wiz Khalifa|Say Yeah|0.751|0.806|0.0602|142.015
+rap|Eminem|Not Afraid|0.851|0.95|0.269|114.661
+rap|Drake|Forever|0.544|0.92|0.277|105.307
+rap|Kid Cudi|Soundtrack 2 My Life|0.524|0.76|0.0935|86.483
+rap|Coolio|Gangsta's Paradise|0.647|0.514|0.0593|79.974
+rap|Eminem|Mockingbird|0.592|0.678|0.248|83.976
+rap|Black Eyed Peas|Pump It|0.646|0.923|0.169|153.659
+rap|The Notorious B.I.G.|Hypnotize|0.901|0.697|0.28|93.941
+rap|Eminem|Sing for the Moment|0.664|0.81|0.0983|164.052
+rap|50 Cent|Candy Shop|0.603|0.594|0.46|129.774
+rap|Lupe Fiasco|Superstar|0.572|0.822|0.361|94.812
+rap|Kanye West|Power|0.538|0.912|0.129|154.042
+rap|Black Eyed Peas|Where Is the Love|0.835|0.706|0.193|94.086
+rap|House of Pain|Jump Around|0.854|0.71|0.0793|106.894
+rap|Eminem|My Name Is|0.863|0.677|0.325|85.527
+rap|Black Eyed Peas|My Humps|0.8|0.688|0.223|123.929
+rap|Eminem|Stan|0.778|0.769|0.248|80.044
+rap|Drake|Over|0.337|0.853|0.278|101.034
+rap|Macklemore & Ryan Lewis|Can't Hold Us (feat. Ray Dalton)|0.641|0.922|0.0786|146.078
+rap|Birdman|Pop Bottles (Main)|0.476|0.823|0.442|149.902
+rap|Lil' Wayne|A Milli|0.679|0.684|0.278|151.748
+rap|Macklemore & Ryan Lewis|Thrift Shop (feat. Wanz)|0.781|0.526|0.293|94.992
+rap|T.I.|What You Know|0.551|0.81|0.0344|73.464
+rap|Beastie Boys|Intergalactic|0.734|0.864|0.303|105.933
+rap|Black Eyed Peas|Meet Me Halfway|0.785|0.604|0.0834|130.03
+country|Johnny Cash|Hurt|0.545|0.376|0.0288|91.469
 country|Johnny Cash|I Walk the Line|0.713|0.258|0.0384|98.805
-country|Johnny Cash|Ring of Fire - Mono Version|0.659|0.585|0.0288|104.111
-country|Johnny Cash|Folsom Prison Blues - Live|0.594|0.577|0.0534|110.783
-country|Johnny Cash|Hurt|0.518|0.401|0.0284|92.148
-country|Johnny Cash|God's Gonna Cut You Down|0.611|0.479|0.117|82.366
-country|Johnny Cash|(Ghost) Riders in the Sky|0.572|0.668|0.0361|109.511
-country|Johnny Cash|A Boy Named Sue (Live in Denmark) - Live|0.685|0.486|0.323|101.539
-country|Johnny Cash|Folsom Prison Blues - Mono Version|0.689|0.527|0.0314|110.519
-country|Willie Nelson|Highwayman|0.675|0.448|0.0389|101.344
-country|Johnny Cash|She Used to Love Me a Lot|0.556|0.438|0.0522|94.911
-country|Carrie Underwood|Before He Cheats|0.519|0.749|0.0405|147.905
-country|Carrie Underwood|Church Bells|0.575|0.844|0.0633|87.007
-country|Carrie Underwood|Blown Away|0.531|0.843|0.0429|136.991
-country|Carrie Underwood|Dirty Laundry|0.456|0.874|0.114|200.179
-country|Carrie Underwood|Heartbeat|0.54|0.766|0.05|139.999
-country|Carrie Underwood|Something in the Water|0.451|0.893|0.0627|139.763
-country|Carrie Underwood|Jesus, Take the Wheel|0.359|0.518|0.0302|76.572
-country|Carrie Underwood|Smoke Break|0.453|0.839|0.0511|160.16
-country|Carrie Underwood|Little Toy Guns|0.434|0.868|0.0603|161.886
-country|Carrie Underwood|All-American Girl|0.624|0.805|0.029|123.991
-country|Lady Antebellum|You Look Good|0.653|0.911|0.0439|152.043
-country|Lady Antebellum|Heart Break|0.512|0.88|0.0369|167.979
+country|Johnny Cash|Ring of Fire|0.659|0.585|0.0288|104.111
+country|Mumford & Sons|I Will Wait|0.488|0.752|0.0323|131.221
+country|Avicii|Wake Me Up|0.518|0.784|0.0524|124.102
+country|Taylor Swift|Love Story|0.615|0.721|0.0302|119.007
+country|Lily Allen|Not Fair|0.718|0.806|0.0376|121.488
+country|Amy Macdonald|This Is the Life|0.513|0.873|0.0461|190.135
+country|Johnny Cash|Folsom Prison Blues|0.594|0.577|0.0534|110.783
 country|Lady Antebellum|Need You Now|0.587|0.622|0.0303|107.943
-country|Lady Antebellum|Need You Now|0.594|0.638|0.0321|107.953
-country|Lady Antebellum|Just a Kiss|0.593|0.639|0.0307|142.881
-country|Lady Antebellum|I Run to You|0.656|0.786|0.034|113.963
-country|Lady Antebellum|Bartender|0.626|0.936|0.036|101.01
-country|Lady Antebellum|American Honey|0.588|0.684|0.0288|85.997
-country|Lady Antebellum|Downtown|0.531|0.822|0.0501|169.739
-country|Lady Antebellum|Somebody Else's Heart|0.647|0.723|0.0304|94.949
-country|Brad Paisley|Last Time for Everything|0.482|0.739|0.0342|155.932
-country|Brad Paisley|She's Everything|0.355|0.478|0.0335|102.971
-country|Brad Paisley|Today|0.347|0.632|0.0381|74.257
-country|Brad Paisley|Whiskey Lullaby|0.52|0.333|0.0302|74.165
-country|Brad Paisley|Then|0.493|0.643|0.0299|144.717
-country|Brad Paisley|Crushin' It|0.595|0.823|0.0483|108.99
-country|Brad Paisley|Mud on the Tires|0.445|0.744|0.0424|185.199
-country|Brad Paisley|Remind Me|0.485|0.726|0.0327|140.781
-country|Brad Paisley|Perfect Storm|0.53|0.753|0.0346|123.979
-country|Brad Paisley|Without a Fight|0.583|0.862|0.0337|112.953
-country|Rascal Flatts|I Like The Sound Of That|0.609|0.813|0.0368|89.964
-country|Rascal Flatts|Yours If You Want It|0.548|0.909|0.0557|113.067
-country|Rascal Flatts|What Hurts The Most|0.527|0.671|0.0283|136.03
-country|Rascal Flatts|Bless The Broken Road|0.599|0.433|0.0265|135.948
-country|Rascal Flatts|My Wish|0.549|0.801|0.0312|135.724
-country|Rascal Flatts|Life is a Highway|0.582|0.952|0.0731|103.027
-country|Rascal Flatts|Easy|0.497|0.652|0.0309|121.255
-country|Rascal Flatts|Come Wake Me Up|0.421|0.633|0.0433|155.715
-country|Rascal Flatts|Back To Us|0.381|0.682|0.0312|188.031
-country|Rascal Flatts|Fast Cars And Freedom|0.617|0.8|0.0303|117.955
-country|Keith Urban|The Fighter|0.681|0.845|0.0525|132.023
-country|Keith Urban|Blue Ain't Your Color|0.686|0.417|0.0363|82.407
-country|Keith Urban|Wasted Time|0.626|0.831|0.0481|100.009
-country|Keith Urban|John Cougar, John Deere, John 3:16|0.644|0.776|0.0929|170.036
-country|Keith Urban|Somebody Like You|0.624|0.84|0.0337|111.02
-country|Keith Urban|Somewhere In My Car|0.584|0.866|0.0419|118.005
-country|Keith Urban|You'll Think Of Me|0.55|0.543|0.0408|82.761
-country|Keith Urban|Cop Car|0.536|0.662|0.0388|154.022
-country|Keith Urban|Tonight I Wanna Cry|0.579|0.385|0.0256|103.779
-country|Keith Urban|Long Hot Summer|0.657|0.785|0.037|127.987
-country|Kenny Chesney|All the Pretty Girls|0.612|0.848|0.0368|120.996
-country|Kenny Chesney|Setting the World On Fire|0.61|0.822|0.0355|93.993
-country|Kenny Chesney|American Kids|0.733|0.589|0.1|170.097
-country|Kenny Chesney|Bar at the End of the World|0.529|0.8|0.031|100.035
-country|Kenny Chesney|Come Over|0.466|0.704|0.0353|176.043
-country|Kenny Chesney|Somewhere With You|0.68|0.849|0.0376|111.969
-country|Kenny Chesney|You and Tequila|0.691|0.454|0.0256|135.839
-country|Kenny Chesney|Save It for a Rainy Day|0.538|0.775|0.0291|154.889
-country|Kenny Chesney|She Thinks My Tractor's Sexy|0.689|0.886|0.0382|122.07
-country|Kenny Chesney|Pirate Flag|0.577|0.805|0.0509|160.128
-country|Shania Twain|Man! I Feel Like A Woman!|0.678|0.899|0.048|124.944
-country|Shania Twain|You're Still The One|0.551|0.527|0.0302|133.758
-country|Shania Twain|Life's About To Get Good|0.64|0.888|0.0451|100.024
-country|Shania Twain|That Don't Impress Me Much|0.745|0.869|0.0574|125.005
-country|Shania Twain|Any Man Of Mine|0.554|0.726|0.0632|156.417
-country|Shania Twain|Poor Me|0.517|0.841|0.0735|158.1
-country|Shania Twain|From This Moment On - Pop On-Tour Version|0.441|0.531|0.0264|135.697
-country|Shania Twain|Party For Two - Country Version With Intro|0.74|0.706|0.0457|121.467
-country|Shania Twain|From This Moment On|0.428|0.514|0.0271|135.819
-country|Shania Twain|Whose Bed Have Your Boots Been Under?|0.731|0.733|0.0456|132.158
-country|Willie Nelson|On the Road Again|0.714|0.724|0.042|111.173
-country|Willie Nelson|Highwayman|0.675|0.448|0.0389|101.344
-country|Waylon Jennings|Mammas, Don't Let Your Babies Grow Up to Be Cowboys|0.592|0.422|0.0332|94.597
-country|Willie Nelson|Always On My Mind|0.518|0.261|0.0272|73.336
-country|Willie Nelson|Pancho and Lefty|0.665|0.37|0.035|122.997
-country|Willie Nelson|Good Hearted Woman|0.464|0.614|0.0423|109.704
-country|Willie Nelson|The Scientist|0.476|0.322|0.027|146.718
-country|Willie Nelson|Seven Spanish Angels (With Ray Charles)|0.551|0.151|0.0408|133.07
-country|Willie Nelson|Whiskey River|0.581|0.574|0.0405|76.915
-country|Willie Nelson|Blue Eyes Crying in the Rain|0.626|0.04|0.0405|117.136
+country|Taylor Swift|You Belong with Me|0.691|0.768|0.0387|129.996
+country|Bob Dylan|Lay Lady Lay|0.52|0.179|0.0454|155.746
+country|Creedence Clearwater Revival|Lookin' Out My Back Door|0.746|0.649|0.0407|105.302
+country|Eagles|Take It Easy|0.575|0.67|0.0318|139.191
+country|Dolly Parton|Jolene|0.674|0.537|0.0363|110.578
+country|Miley Cyrus|The Climb|0.326|0.625|0.0343|160.542
+country|Taylor Swift|We Are Never Ever Getting Back Together|0.622|0.682|0.113|86.035
+country|Avicii|Hey Brother|0.537|0.777|0.0473|124.943
+country|Johnny Cash|Personal Jesus|0.746|0.583|0.0431|123.335
+country|Wilco|Jesus, Etc.|0.756|0.28|0.0296|109.413
+country|Johnny Cash|The Man Comes Around|0.62|0.584|0.155|97.099
+country|Eagles|Desperado|0.228|0.224|0.0311|60.3
+country|The Beatles|Don't Pass Me By|0.599|0.537|0.0254|84.895
+country|The Band Perry|If I Die Young|0.594|0.502|0.0281|130.674
+country|Kid Rock|All Summer Long|0.7|0.864|0.0283|102.997
+country|Barry Louis Polisar|All I Want Is You|0.557|0.407|0.0457|180.919
+country|Carrie Underwood|Before He Cheats|0.519|0.749|0.0405|147.905
+country|Neil Young|Harvest Moon|0.648|0.309|0.0264|112.929
+country|Willie Nelson|On The Road Again|0.714|0.715|0.0387|111.036
+country|The Beatles|What Goes On|0.67|0.776|0.0749|96.93
+country|Johnny Cash|Give My Love to Rose|0.686|0.264|0.0368|130.947
+country|Johnny Cash|Get Rhythm|0.866|0.599|0.0426|110.289
+country|Sheryl Crow|All I Wanna Do|0.836|0.533|0.0332|120.08
+country|John Denver|Take Me Home, Country Roads|0.255|0.43|0.0322|164.267
+country|Wilco|I Am Trying to Break Your Heart|0.467|0.536|0.0268|85.958
+country|The Beatles|Rocky Raccoon|0.599|0.363|0.0315|79.456
+country|Lady Gaga|Yoü and I|0.5|0.716|0.0558|127.066
+country|Avenged Sevenfold|Dear God|0.472|0.772|0.0316|139.993
+country|The Tallest Man on Earth|I Won't Be Found|0.591|0.492|0.0288|114.563
+country|Kings of Leon|Back Down South|0.476|0.619|0.0398|117.113
+country|Johnny Cash|God's Gonna Cut You Down|0.611|0.479|0.117|82.366
+country|Dolly Parton|9 to 5|0.554|0.783|0.0457|105.39
+country|Shania Twain|You're Still the One|0.551|0.527|0.0302|133.758
+country|Taylor Swift|White Horse|0.583|0.354|0.0254|92.526
+country|Eagles|Tequila Sunrise|0.632|0.397|0.0265|110.578
+country|Johnny Cash|Man in Black|0.676|0.58|0.0506|95.358
+country|Rascal Flatts|What Hurts the Most|0.527|0.671|0.0283|136.03
+country|Dierks Bentley|What Was I Thinkin'|0.551|0.825|0.044|164.857
+country|Charlie Daniels Band|The Devil Went Down to Georgia|0.517|0.535|0.0494|135.087
+country|The Beatles|Act Naturally|0.702|0.447|0.0308|93.02
