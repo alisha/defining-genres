@@ -1,12 +1,20 @@
+# Getting data
 import requests # to access the APIs
 import json
 import unicodecsv as csv
 from pprint import PrettyPrinter
 import spotipy
-import spotipy.util as util
 from spotipy.oauth2 import SpotifyClientCredentials
 
+# Analyzing data
+import pandas as pd
+import numpy as np
+import scipy
+from scipy.stats import ttest_ind
+
 import secret # get API keys
+
+# Inspiration: https://newrepublic.com/article/121437/why-indie-music-so-unbearably-white
 
 # Definitions
 LF_BASE = 'https://ws.audioscrobbler.com/2.0/'
@@ -16,10 +24,9 @@ client_credentials_manager = SpotifyClientCredentials()
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 features = ['danceability', 'energy', 'speechiness', 'tempo']
-indie_artist_name = "Bjork"
-possible_indie_artists = ["SZA", "FKA Twigs", "Dawn Richard"]
 
 pp = PrettyPrinter(indent=2)
+
 
 def write_artist_top_tracks_data(writer, artist):
   # Get data about the indie artist
@@ -32,6 +39,7 @@ def write_artist_top_tracks_data(writer, artist):
     audio_features = get_music_features(artist, song_name)
     if len(audio_features) > 0:
       write_to_csv(writer, artist, song_name, audio_features)
+
 
 # Given a song and arist name, find that song on Spotify and return 
 # an array of audio features for that song
@@ -50,26 +58,67 @@ def get_music_features(artist, song_name):
     return song_features
   return []
 
+
 # Given a CSV writer, artist name, song name, and an array of audio features,
 # write that data to a CSV file
 def write_to_csv(writer, artist, song_name, audio_features):
   writer.writerow([artist, song_name] + audio_features)
 
-def main():
+
+def get_data(artists):
   # Set up CSV file for pandas
   f = open('indie.csv', 'wb')
   writer = csv.writer(f, delimiter="|", quotechar="", quoting=csv.QUOTE_NONE, encoding='utf-8')
-  writer.writerow(['artist name', 'song name'] + features)
+  writer.writerow(['artist', 'song'] + features)
 
   # Get data about all artists
-  write_artist_top_tracks_data(writer, indie_artist_name)
-  for artist in possible_indie_artists:
+  for artist in artists:
     write_artist_top_tracks_data(writer, artist)
 
-  # Read data into pandas dataframe
-  music_data = pd.read_csv('data.csv', sep='|', error_bad_lines=False)
-
   f.close()
+
+
+def analyze_data(definitely_indie_artists, possible_indie_artists):
+  # Read data into pandas dataframe
+  music_data = pd.read_csv('indie.csv', sep='|', error_bad_lines=False)
+
+  for artist in possible_indie_artists:
+    for indie_artist in definitely_indie_artists:
+      print("Comparing " + indie_artist + " and " + artist)
+      num_diffs = 0
+
+      indie_artist_df = music_data.query(('artist == "{}"').format(indie_artist))
+      artist_df = music_data.query(('artist == "{}"').format(artist))
+      
+      for feature in features:
+        # Print means
+        indie_artist_avg = indie_artist_df[feature].mean()
+        print(("Average {0} for {1} is {2}").format(feature, indie_artist, str(indie_artist_avg)))
+        artist_avg = artist_df[feature].mean()
+        print(("Average {0} for {1} is {2}").format(feature, artist, str(artist_avg)))
+
+        # Do T-Test
+        (stat, pvalue) = ttest_ind(indie_artist_df[feature], artist_df[feature])
+        if pvalue < 0.05:
+          num_diffs += 1
+          print(("P value is {0}, so there is NO statistically significant difference\n").format(pvalue))
+        else:
+          print(("P value is {0}, so there IS a statistically significant difference\n").format(pvalue))
+
+      print(("{0} and {1} differ in {2} out of {3} categories\n\n").format(indie_artist, artist, num_diffs, len(features)))
+
+
+def main():
+
+  definitely_indie_artists = ["Bjork"]
+  #indie_artist_name = "Bjork"
+  possible_indie_artists = ["SZA", "FKA Twigs", "Dawn Richard"]
+  artists = definitely_indie_artists + possible_indie_artists
+
+  # get_data(artists)
+
+  analyze_data(definitely_indie_artists, possible_indie_artists)
+
 
 if __name__ == '__main__':
   main()
