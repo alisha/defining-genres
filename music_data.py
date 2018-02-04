@@ -22,7 +22,7 @@ LF_BASE = 'https://ws.audioscrobbler.com/2.0/'
 client_credentials_manager = SpotifyClientCredentials(client_id=secret.SPOTIPY_CLIENT_ID, client_secret=secret.SPOTIPY_CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-features = ['danceability', 'energy', 'speechiness', 'tempo']
+features = ['acousticness', 'danceability', 'energy', 'speechiness', 'tempo', 'valence']
 
 pp = PrettyPrinter(indent=2)
 
@@ -117,9 +117,9 @@ def compare_two_artists(artist1_name, artist1_df, artist2_name, artist2_df, feat
     # Do T-Test
     (stat, pvalue) = ttest_ind(artist1_df[feature], artist2_df[feature])
     if pvalue < 0.05:
-      num_diffs += 1
       file.write(("P value is {0}, so there is NO statistically significant difference\n\n").format(pvalue))
     else:
+      num_diffs += 1
       file.write(("P value is {0}, so there IS a statistically significant difference\n\n").format(pvalue))
 
   file.write(("{0} and {1} differ in {2} out of {3} categories\n\n\n").format(artist1_name, artist2_name, num_diffs, len(features)))

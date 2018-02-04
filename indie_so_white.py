@@ -27,7 +27,7 @@ def main():
   possible_indie_artists = ["Valerie June"]
   artists = definitely_indie_artists + possible_indie_artists
 
-  #music_data.get_data(artists)
+  music_data.get_data("indie.csv", artists)
   music_data.analyze_data("indie.csv", definitely_indie_artists, possible_indie_artists, "indie_comparison.txt")
 
 

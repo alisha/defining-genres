@@ -14,5 +14,5 @@ definite_indie_artists = music_data.get_genre_top_artists("indie", num_artists=l
 all_artists = potential_indie_artists + definite_indie_artists
 
 # Compare all artists
-music_data.get_data("similar_indie.csv", all_artists)
+# music_data.get_data("similar_indie.csv", all_artists)
 music_data.analyze_data("similar_indie.csv", potential_indie_artists, definite_indie_artists, "similar_indie.txt")

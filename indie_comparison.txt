@@ -1,0 +1,58 @@
+Comparing Dirty Projectors and Valerie June
+
+Average acousticness for Dirty Projectors is 0.4455
+Average acousticness for Valerie June is 0.662
+P value is 0.114971220483, so there IS a statistically significant difference
+
+Average danceability for Dirty Projectors is 0.5419
+Average danceability for Valerie June is 0.4754
+P value is 0.318900050778, so there IS a statistically significant difference
+
+Average energy for Dirty Projectors is 0.5445
+Average energy for Valerie June is 0.3746
+P value is 0.0501961826495, so there IS a statistically significant difference
+
+Average speechiness for Dirty Projectors is 0.06787
+Average speechiness for Valerie June is 0.03235
+P value is 0.0927602586016, so there IS a statistically significant difference
+
+Average tempo for Dirty Projectors is 92.1816
+Average tempo for Valerie June is 130.2182
+P value is 0.0132675463185, so there is NO statistically significant difference
+
+Average valence for Dirty Projectors is 0.5201
+Average valence for Valerie June is 0.32967
+P value is 0.053436403391, so there IS a statistically significant difference
+
+Dirty Projectors and Valerie June differ in 1 out of 6 categories
+
+
+Comparing Vampire Weekend and Valerie June
+
+Average acousticness for Vampire Weekend is 0.253325555556
+Average acousticness for Valerie June is 0.662
+P value is 0.00530411602037, so there is NO statistically significant difference
+
+Average danceability for Vampire Weekend is 0.639333333333
+Average danceability for Valerie June is 0.4754
+P value is 0.0280645241912, so there is NO statistically significant difference
+
+Average energy for Vampire Weekend is 0.700111111111
+Average energy for Valerie June is 0.3746
+P value is 0.000383708752187, so there is NO statistically significant difference
+
+Average speechiness for Vampire Weekend is 0.0889222222222
+Average speechiness for Valerie June is 0.03235
+P value is 0.00812528416782, so there is NO statistically significant difference
+
+Average tempo for Vampire Weekend is 128.059444444
+Average tempo for Valerie June is 130.2182
+P value is 0.903021670548, so there IS a statistically significant difference
+
+Average valence for Vampire Weekend is 0.789888888889
+Average valence for Valerie June is 0.32967
+P value is 0.00016373959415, so there is NO statistically significant difference
+
+Vampire Weekend and Valerie June differ in 5 out of 6 categories
+
+
