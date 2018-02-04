@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 import scipy
 from scipy.stats import ttest_ind
+from pathlib import Path
 
 import secret # get API keys
 
@@ -37,6 +38,20 @@ def get_similar_artists(artist, num_artists=10):
     similar_artists.append(artist["name"])
 
   return similar_artists
+
+
+def get_genre_top_artists(genre, num_artists=10):
+  # Get a genre's top artists
+  top_artists_params = {'method': 'tag.gettopartists', 'tag': genre, 'limit': num_artists, 'api_key': secret.LF_KEY, 'format': 'json'}
+  top_artists_request = requests.get(LF_BASE, params=top_artists_params).json()
+
+  top_artists = []
+
+  for artist in top_artists_request["topartists"]["artist"]:
+    top_artists.append(artist["name"])
+
+  return top_artists
+
 
 # Writes artist's top tracks to the CSV defined by the writer
 def write_artist_top_tracks_data(writer, artist):
@@ -89,31 +104,44 @@ def get_data(csv_name, artists):
   f.close()
 
 
-def analyze_data(csv_name, definitely_indie_artists, possible_indie_artists):
+def compare_two_artists(artist1_name, artist1_df, artist2_name, artist2_df, features):
+  num_diffs = 0
+
+  for feature in features:
+    # Print means
+    artist1_avg = artist1_df[feature].mean()
+    print(("Average {0} for {1} is {2}").format(feature, artist1_name, str(artist1_avg)))
+    artist_avg = artist2_df[feature].mean()
+    print(("Average {0} for {1} is {2}").format(feature, artist2_name, str(artist_avg)))
+
+    # Do T-Test
+    (stat, pvalue) = ttest_ind(artist1_df[feature], artist2_df[feature])
+    if pvalue < 0.05:
+      num_diffs += 1
+      print(("P value is {0}, so there is NO statistically significant difference\n").format(pvalue))
+    else:
+      print(("P value is {0}, so there IS a statistically significant difference\n").format(pvalue))
+
+  print(("{0} and {1} differ in {2} out of {3} categories\n\n").format(artist1_name, artist2_name, num_diffs, len(features)))
+
+
+# Analyzes data in csv_name, so assumes data has already been retrieved
+# Compares the artists in group1 with the artists in group2
+def analyze_data(csv_name, group1, group2):
+  # Make sure that the csv file exists
+  if not Path(csv_name).is_file():
+    print("Cannot access {0}", csv_name)
+    return
+
   # Read data into pandas dataframe
   music_data = pd.read_csv(csv_name, sep='|', error_bad_lines=False)
 
-  for artist in possible_indie_artists:
-    for indie_artist in definitely_indie_artists:
-      print("Comparing " + indie_artist + " and " + artist)
-      num_diffs = 0
+  for artist1 in group1:
+    for artist2 in group2:
+      print("Comparing " + artist1 + " and " + artist2)
 
-      indie_artist_df = music_data.query(('artist == "{}"').format(indie_artist))
-      artist_df = music_data.query(('artist == "{}"').format(artist))
+      artist1_df = music_data.query(('artist == "{}"').format(artist1))
+      artist2_df = music_data.query(('artist == "{}"').format(artist2))
+      compare_two_artists(artist1, artist1_df, artist2, artist2_df, features)
 
-      for feature in features:
-        # Print means
-        indie_artist_avg = indie_artist_df[feature].mean()
-        print(("Average {0} for {1} is {2}").format(feature, indie_artist, str(indie_artist_avg)))
-        artist_avg = artist_df[feature].mean()
-        print(("Average {0} for {1} is {2}").format(feature, artist, str(artist_avg)))
-
-        # Do T-Test
-        (stat, pvalue) = ttest_ind(indie_artist_df[feature], artist_df[feature])
-        if pvalue < 0.05:
-          num_diffs += 1
-          print(("P value is {0}, so there is NO statistically significant difference\n").format(pvalue))
-        else:
-          print(("P value is {0}, so there IS a statistically significant difference\n").format(pvalue))
-
-      print(("{0} and {1} differ in {2} out of {3} categories\n\n").format(indie_artist, artist, num_diffs, len(features)))
+      
