@@ -104,30 +104,30 @@ def get_data(csv_name, artists):
   f.close()
 
 
-def compare_two_artists(artist1_name, artist1_df, artist2_name, artist2_df, features):
+def compare_two_artists(artist1_name, artist1_df, artist2_name, artist2_df, features, file):
   num_diffs = 0
 
   for feature in features:
     # Print means
     artist1_avg = artist1_df[feature].mean()
-    print(("Average {0} for {1} is {2}").format(feature, artist1_name, str(artist1_avg)))
+    file.write(("Average {0} for {1} is {2}\n").format(feature, artist1_name, str(artist1_avg)))
     artist_avg = artist2_df[feature].mean()
-    print(("Average {0} for {1} is {2}").format(feature, artist2_name, str(artist_avg)))
+    file.write(("Average {0} for {1} is {2}\n").format(feature, artist2_name, str(artist_avg)))
 
     # Do T-Test
     (stat, pvalue) = ttest_ind(artist1_df[feature], artist2_df[feature])
     if pvalue < 0.05:
       num_diffs += 1
-      print(("P value is {0}, so there is NO statistically significant difference\n").format(pvalue))
+      file.write(("P value is {0}, so there is NO statistically significant difference\n\n").format(pvalue))
     else:
-      print(("P value is {0}, so there IS a statistically significant difference\n").format(pvalue))
+      file.write(("P value is {0}, so there IS a statistically significant difference\n\n").format(pvalue))
 
-  print(("{0} and {1} differ in {2} out of {3} categories\n\n").format(artist1_name, artist2_name, num_diffs, len(features)))
+  file.write(("{0} and {1} differ in {2} out of {3} categories\n\n\n").format(artist1_name, artist2_name, num_diffs, len(features)))
 
 
 # Analyzes data in csv_name, so assumes data has already been retrieved
 # Compares the artists in group1 with the artists in group2
-def analyze_data(csv_name, group1, group2):
+def analyze_data(csv_name, group1, group2, file_name):
   # Make sure that the csv file exists
   if not Path(csv_name).is_file():
     print("Cannot access {0}", csv_name)
@@ -136,12 +136,16 @@ def analyze_data(csv_name, group1, group2):
   # Read data into pandas dataframe
   music_data = pd.read_csv(csv_name, sep='|', error_bad_lines=False)
 
+  f = open(file_name, 'w')
+
   for artist1 in group1:
     for artist2 in group2:
-      print("Comparing " + artist1 + " and " + artist2)
+      f.write("Comparing " + artist1 + " and " + artist2 + "\n\n")
 
       artist1_df = music_data.query(('artist == "{}"').format(artist1))
       artist2_df = music_data.query(('artist == "{}"').format(artist2))
-      compare_two_artists(artist1, artist1_df, artist2, artist2_df, features)
+      compare_two_artists(artist1, artist1_df, artist2, artist2_df, features, f)
+
+  f.close()
 
       

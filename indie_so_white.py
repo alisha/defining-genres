@@ -28,7 +28,7 @@ def main():
   artists = definitely_indie_artists + possible_indie_artists
 
   #music_data.get_data(artists)
-  music_data.analyze_data("indie.csv", definitely_indie_artists, possible_indie_artists)
+  music_data.analyze_data("indie.csv", definitely_indie_artists, possible_indie_artists, "indie_comparison.txt")
 
 
 if __name__ == '__main__':
