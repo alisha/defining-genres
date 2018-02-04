@@ -25,7 +25,20 @@ features = ['danceability', 'energy', 'speechiness', 'tempo']
 
 pp = PrettyPrinter(indent=2)
 
+# Returns an array of similar artists using Last.fm API
+def get_similar_artists(artist, num_artists=10):
+  similar_artists_params = {'method': 'artist.getSimilar', 'artist': artist, 'limit': num_artists, 'api_key': secret.LF_KEY, 'format': 'json'}
+  similar_artists_request = requests.get(LF_BASE, params=similar_artists_params).json()
 
+  similar_artists = []
+
+  # pp.pprint(similar_artists_request["similarartists"]["artist"])
+  for artist in similar_artists_request["similarartists"]["artist"]:
+    similar_artists.append(artist["name"])
+
+  return similar_artists
+
+# Writes artist's top tracks to the CSV defined by the writer
 def write_artist_top_tracks_data(writer, artist):
   # Get data about the artist
   artist_data_params = {'method': 'artist.gettoptracks', 'artist': artist, 'limit': 10, 'api_key': secret.LF_KEY, 'format': 'json'}
