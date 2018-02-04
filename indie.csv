@@ -1,40 +1,30 @@
-artist name|song name|danceability|energy|speechiness|tempo
-Bjork|Army of Me|0.462|0.677|0.0327|172.192
-Bjork|Jóga|0.321|0.697|0.057|146.161
-Bjork|Hyperballad|0.519|0.437|0.0325|134.933
-Bjork|All Is Full of Love|0.481|0.49|0.0271|152.04
-Bjork|Human Behaviour|0.681|0.65|0.0358|109.454
-Bjork|Hunter|0.307|0.642|0.0825|160.078
-Bjork|Venus as a Boy|0.617|0.393|0.0353|136.213
-Bjork|Bachelorette|0.438|0.913|0.0858|96.959
-Bjork|It's Oh So Quiet|0.474|0.136|0.0595|124.412
-Bjork|Pagan Poetry|0.513|0.46|0.0298|131.984
-SZA|Love Galore|0.795|0.594|0.0747|135.002
-SZA|Drew Barrymore|0.578|0.523|0.0429|134.931
-SZA|The Weekend|0.487|0.366|0.0531|68.191
-SZA|Supermodel|0.612|0.442|0.289|119.235
-SZA|Babylon (feat. Kendrick Lamar)|0.51|0.71|0.113|131.891
-SZA|Broken Clocks|0.684|0.683|0.177|112.856
-SZA|Prom|0.805|0.702|0.0887|120.041
-SZA|Doves in the Wind|0.692|0.713|0.351|137.36
-SZA|Julia|0.666|0.688|0.031|111.02
-FKA Twigs|Two Weeks|0.48|0.717|0.23|109.756
-FKA Twigs|Pendulum|0.427|0.592|0.142|116.661
-FKA Twigs|Video Girl|0.659|0.692|0.0468|100.022
-FKA Twigs|Water Me|0.476|0.452|0.0984|120.287
-FKA Twigs|Lights On|0.449|0.454|0.0751|75.015
-FKA Twigs|Preface|0.283|0.656|0.0518|110.451
-FKA Twigs|Hours|0.629|0.424|0.208|140.863
-FKA Twigs|Papi Pacify|0.557|0.608|0.0862|109.67
-FKA Twigs|Give Up|0.665|0.55|0.0498|110.024
-FKA Twigs|Closer|0.637|0.561|0.0365|122.095
-Dawn Richard|Billie Jean|0.692|0.648|0.125|90.965
-Dawn Richard|Calypso|0.404|0.847|0.212|141.725
-Dawn Richard|Return of a Queen|0.264|0.729|0.0706|168.379
-Dawn Richard|Blow|0.599|0.852|0.0761|119.98
-Dawn Richard|Noir (Intro)|0.475|0.549|0.215|92.962
-Dawn Richard|Intro (In the Hearts Tonight)|0.485|0.266|0.0297|90.0
-Dawn Richard|Pretty Wicked Things|0.56|0.478|0.0527|117.954
-Dawn Richard|Riot|0.716|0.706|0.0338|128.001
-Dawn Richard|Not Above That|0.402|0.779|0.241|143.95
-Dawn Richard|Titans (Interlude)|0.351|0.358|0.0598|88.032
+artist|song|danceability|energy|speechiness|tempo
+Dirty Projectors|Stillness Is the Move|0.569|0.542|0.134|76.309
+Dirty Projectors|Cannibal Resource|0.557|0.829|0.0707|77.181
+Dirty Projectors|Two Doves|0.435|0.278|0.0318|80.543
+Dirty Projectors|Gun Has No Trigger|0.681|0.672|0.0455|101.128
+Dirty Projectors|Temecula Sunrise|0.404|0.499|0.0365|131.484
+Dirty Projectors|No Intention|0.578|0.665|0.0355|79.864
+Dirty Projectors|Swing Lo Magellan|0.738|0.366|0.0324|101.031
+Dirty Projectors|The Bride|0.394|0.445|0.0282|94.734
+Dirty Projectors|Useful Chamber|0.338|0.509|0.0411|96.984
+Dirty Projectors|About to Die|0.725|0.64|0.223|82.558
+Vampire Weekend|A-Punk|0.548|0.816|0.0499|174.993
+Vampire Weekend|Oxford Comma|0.694|0.711|0.0517|119.516
+Vampire Weekend|Cape Cod Kwassa Kwassa|0.852|0.518|0.0413|105.058
+Vampire Weekend|Mansard Roof|0.536|0.7|0.141|165.406
+Vampire Weekend|Campus|0.524|0.709|0.0632|108.68
+Vampire Weekend|White Sky|0.785|0.692|0.0776|102.019
+Vampire Weekend|Horchata|0.834|0.787|0.14|119.976
+Vampire Weekend|Walcott|0.482|0.559|0.0296|80.777
+Vampire Weekend|Cousins|0.499|0.809|0.206|176.11
+Valerie June|Workin' Woman Blues|0.582|0.575|0.0298|123.18
+Valerie June|Wanna Be On Your Mind|0.628|0.55|0.0287|75.42
+Valerie June|Somebody To Love|0.53|0.182|0.0309|124.329
+Valerie June|The Hour|0.388|0.482|0.0283|176.39
+Valerie June|Twined & Twisted|0.484|0.151|0.0335|176.325
+Valerie June|You Can't Be Told|0.659|0.727|0.0332|127.601
+Valerie June|ASTRAL PLANE|0.305|0.264|0.0408|172.984
+Valerie June|Tennessee Time|0.546|0.339|0.0278|83.428
+Valerie June|Trials, Troubles, Tribulations|0.433|0.174|0.0302|160.89
+Valerie June|Shotgun|0.199|0.302|0.0403|81.635

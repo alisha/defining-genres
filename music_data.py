@@ -18,7 +18,7 @@ import secret # get API keys
 LF_BASE = 'https://ws.audioscrobbler.com/2.0/'
 
 # Authenticate spotify
-client_credentials_manager = SpotifyClientCredentials()
+client_credentials_manager = SpotifyClientCredentials(client_id=secret.SPOTIPY_CLIENT_ID, client_secret=secret.SPOTIPY_CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 features = ['danceability', 'energy', 'speechiness', 'tempo']
